@@ -178,61 +178,6 @@ export default function Home() {
             </section>
           </aside>
         </div>
-          </div>
-          {/* Sidebar Column */}
-          <aside className="space-y-8">
-            {/* Location Map */}
-            <section className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
-              <div className="h-48 w-full bg-surface-container-high relative group">
-                <img alt="Map Location" className="w-full h-full object-cover" data-alt="Bird's eye view of a modern city grid with clean architecture and green parks in soft daylight" data-location="San Jose" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM1d9QHkiGVtdOEyCzVEPNcdXTQoMxCIxwhRA7i8cU8yAv7IuJQxiVzxy1f3xx3pvPcLY43swRmn_hn9ye_qGtpThC3xG_FBB4KDZOXzCZVsHG-f8i6lQSX4IE5Xu8xqGiSQwuahRdIVAqJ1X-m4tvV55edZZTm84Zv6oWdJstsI5M6_6d8PwpSFlUoxo0-5mxby2wPaiaPLOrJv6qXU8tH5gifyG9Com23kIk6ZoOKWndSyJBYNisOXsvZqeut-4Dva4wRDCjN2__" />
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="bg-primary text-white p-3 rounded-full shadow-2xl scale-110">
-                    <span className="material-symbols-outlined" data-icon="location_on" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="font-headline font-bold text-lg mb-2">Competition Venue</h3>
-                <p className="text-on-surface-variant text-sm mb-4">Tech Center Plaza, 150 Innovation Way, San Jose, CA</p>
-                <button className="text-primary font-bold text-sm flex items-center gap-2 group">
-                  Get Directions
-                  <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-                </button>
-              </div>
-            </section>
-            {/* Requirements & Details */}
-            <section className="bg-surface-container-low p-8 rounded-xl space-y-6">
-              <h3 className="font-headline font-bold text-xl">Quick Details</h3>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-primary mt-1" data-icon="verified">verified</span>
-                  <div>
-                    <p className="font-bold text-sm">Entry Fee</p>
-                    <p className="text-sm text-on-surface-variant">$45.00 per team</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-primary mt-1" data-icon="inventory_2">inventory_2</span>
-                  <div>
-                    <p className="font-bold text-sm">Equipment Provided</p>
-                    <p className="text-sm text-on-surface-variant">Tables, Wi-Fi, Power Supply</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-primary mt-1" data-icon="event_available">event_available</span>
-                  <div>
-                    <p className="font-bold text-sm">Deadline</p>
-                    <p className="text-sm text-on-surface-variant text-error font-semibold">Sept 30, 2024</p>
-                  </div>
-                </div>
-              </div>
-              <div className="pt-4 border-t border-outline-variant/15">
-                <p className="text-xs text-on-surface-variant mb-4">Organized by San Jose Youth Tech Council</p>
-                <button className="w-full bg-primary text-white font-bold py-4 rounded-full shadow-lg hover:opacity-90 transition-all">Download Rulebook</button>
-              </div>
-            </section>
-          </aside>
-        </div>
       </main>
       {/* BottomNavBar (Mobile Only) */}
       <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-[#f6faf8]/90 backdrop-blur-md rounded-t-3xl border-t border-[#a9b4b1]/15 shadow-2xl">
