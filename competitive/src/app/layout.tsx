@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
+import { AuthProvider } from "@/app/context/AuthContext";
+import Navbar from "@/app/components/Navbar";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -37,7 +39,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="bg-surface font-body text-on-surface overflow-x-hidden">
-        {children}
+        <AuthProvider>
+          <Navbar />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );
